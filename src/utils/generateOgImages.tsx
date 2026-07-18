@@ -1,21 +1,26 @@
 import satori, { type SatoriOptions } from "satori";
 import { Resvg } from "@resvg/resvg-js";
 import { type CollectionEntry } from "astro:content";
+import { readFile } from "node:fs/promises";
 import postOgImage from "./og-templates/post";
 import siteOgImage from "./og-templates/site";
 
 const fetchFonts = async () => {
-  // Regular Font
-  const fontFileRegular = await fetch(
-    "https://www.1001fonts.com/download/font/poppins.regular.ttf"
+  const fontRegularBuffer = await readFile(
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
   );
-  const fontRegular: ArrayBuffer = await fontFileRegular.arrayBuffer();
+  const fontBoldBuffer = await readFile(
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+  );
 
-  // Bold Font
-  const fontFileBold = await fetch(
-    "https://www.1001fonts.com/download/font/poppins.bold.ttf"
+  const fontRegular = fontRegularBuffer.buffer.slice(
+    fontRegularBuffer.byteOffset,
+    fontRegularBuffer.byteOffset + fontRegularBuffer.byteLength
   );
-  const fontBold: ArrayBuffer = await fontFileBold.arrayBuffer();
+  const fontBold = fontBoldBuffer.buffer.slice(
+    fontBoldBuffer.byteOffset,
+    fontBoldBuffer.byteOffset + fontBoldBuffer.byteLength
+  );
 
   return { fontRegular, fontBold };
 };
