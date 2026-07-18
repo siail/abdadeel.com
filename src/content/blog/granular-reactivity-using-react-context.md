@@ -26,7 +26,7 @@ Context in react was introduced to solve solely one problem. And that is prop dr
 
 In this article, I’ll introduce a library called **textcon** that I built on top of react context and support features like selectors and many more.
 
-[https://github.com/mabdullahadeel/textcon](https://github.com/mabdullahadeel/textcon)
+[https://github.com/siail/textcon](https://github.com/siail/textcon)
 
 If you want to see more in depth explanation and use of the library. You can watch this video.
 
@@ -241,6 +241,6 @@ const Counter1ControlByTen = () => {
 
 `textcon` comes with other useful features like global state persist and subscribing to state changes outside the react components.
 
-[https://github.com/mabdullahadeel/textcon](https://github.com/mabdullahadeel/textcon)
+[https://github.com/siail/textcon](https://github.com/siail/textcon)
 
 🚀

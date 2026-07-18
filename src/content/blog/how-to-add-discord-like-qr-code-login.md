@@ -58,7 +58,7 @@ To get better understanding of application architecture, visit [this](https://ww
 ## 😺 GitHub Repo
 
 The demo project source code can be found on GitHub
-{% github https://github.com/mabdullahadeel/yt-django-qr-code-login %}
+{% github https://github.com/siail/yt-django-qr-code-login %}
 
 ## 🎥 Video
 

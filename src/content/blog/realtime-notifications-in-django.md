@@ -36,7 +36,7 @@ But Django was never built to handle the real-time side of things e.g websockets
 ## 🎉 Let's Solve The Problem
 
 In this article, I'll show you how you can add any sort of real-time functionality to your Django application while keeping the complexity and time to implementation minimal.
-Here I'll use PubNub to add notification features to a basic social media application I built as a demo. If you want to have a look at the codebase, [here you go!](https://github.com/mabdullahadeel/django-pubnub-notifications) 👇
+Here I'll use PubNub to add notification features to a basic social media application I built as a demo. If you want to have a look at the codebase, [here you go!](https://github.com/siail/django-pubnub-notifications) 👇
 
 Live App 👇
 
