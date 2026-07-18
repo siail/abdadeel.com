@@ -25,7 +25,7 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/mabdullahadeel",
+    href: "https://github.com/siail",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
@@ -61,25 +61,25 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "TikTok",
-    href: "https://github.com/mabdullahadeel",
+    href: "https://github.com/siail",
     linkTitle: `${SITE.title} on TikTok`,
     active: false,
   },
   {
     name: "Discord",
-    href: "https://github.com/mabdullahadeel",
+    href: "https://github.com/siail",
     linkTitle: `${SITE.title} on Discord`,
     active: false,
   },
   {
     name: "GitLab",
-    href: "https://github.com/mabdullahadeel",
+    href: "https://github.com/siail",
     linkTitle: `${SITE.title} on GitLab`,
     active: false,
   },
   {
     name: "Reddit",
-    href: "https://github.com/mabdullahadeel",
+    href: "https://github.com/siail",
     linkTitle: `${SITE.title} on Reddit`,
     active: false,
   },

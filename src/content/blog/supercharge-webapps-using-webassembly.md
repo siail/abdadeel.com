@@ -168,7 +168,7 @@ In conclusion, WebAssembly is a powerful tool for optimizing web applications. I
 
 ## Source Code
 
-The source code for this project can be found [here](https://github.com/mabdullahadeel/wasm-web-performance-test).
+The source code for this project can be found [here](https://github.com/siail/wasm-web-performance-test).
 
 ## Live Demo
 

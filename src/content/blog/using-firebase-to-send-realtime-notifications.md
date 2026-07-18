@@ -38,7 +38,7 @@ In this article, I will guide you through all the steps you need to follow to su
 During my testing, I have built a demo application that you can refer to any time you find yourself lost.
 Here is the Github 😸 link 👇
 
-https://github.com/mabdullahadeel/django-firebase-notifications
+https://github.com/siail/django-firebase-notifications
 
 Here is the live app 👇
 
@@ -139,7 +139,7 @@ class FirebaseService:
 
 ```
 
-Here I am loading the `GOOGLE_APPLICATION_CRENDITALS` which is the path to the `credentials.json` file from the django settings. And in my `settings.py` file, I am loading the same variable from the environment using django-environ. You can have a look at that [here](https://github.com/mabdullahadeel/django-firebase-notifications/blob/54c0fef1de70d6c8ab1fe73d0504a1a9f8ae3ba1/server/djnotification/settings.py#L165).
+Here I am loading the `GOOGLE_APPLICATION_CRENDITALS` which is the path to the `credentials.json` file from the django settings. And in my `settings.py` file, I am loading the same variable from the environment using django-environ. You can have a look at that [here](https://github.com/siail/django-firebase-notifications/blob/54c0fef1de70d6c8ab1fe73d0504a1a9f8ae3ba1/server/djnotification/settings.py#L165).
 
 - `get_custom_token_for_user method` is responsible for creating tokens for a given django user. This token is then sent to the client to be used to authenticate with firebase. `create_custom_token` from firebase admin takes `developer_claims` argument. Whatever you passed here will be stored in the payload of the token. Not just that, this object/dict will be available in the firebase request.auth object. This means you can access this object on the client and even in the firebase security rules.
 
@@ -174,7 +174,7 @@ npm install firebase
 pnpm add firebase
 ```
 
-Then in [`./firebase/index.ts`](https://github.com/mabdullahadeel/django-firebase-notifications/blob/master/client/firebase/index.ts) , I am using the credentials to initialize the firebase app and use it across the application.
+Then in [`./firebase/index.ts`](https://github.com/siail/django-firebase-notifications/blob/master/client/firebase/index.ts) , I am using the credentials to initialize the firebase app and use it across the application.
 
 ```tsx
 import { initializeApp } from "firebase/app";
@@ -196,7 +196,7 @@ export const auth = getAuth(app);
 ```
 
 Then in my authentication logic, on successful login/signup I am automatically signing the user in with firebase using the token received from the django server.
-[See here for details](https://github.com/mabdullahadeel/django-firebase-notifications/blob/54c0fef1de70d6c8ab1fe73d0504a1a9f8ae3ba1/client/context/TokenAuthContext.tsx#L221-L223)
+[See here for details](https://github.com/siail/django-firebase-notifications/blob/54c0fef1de70d6c8ab1fe73d0504a1a9f8ae3ba1/client/context/TokenAuthContext.tsx#L221-L223)
 
 ```tsx
 import { auth as firebaseAuth } from "./firebase";

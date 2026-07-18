@@ -82,6 +82,6 @@ Hit deploy and in moments, your API is up and running.
 
 # Source Code
 
-[https://github.com/mabdullahadeel/vercel-fastapi-deployment](https://github.com/mabdullahadeel/vercel-fastapi-deployment)
+[https://github.com/siail/vercel-fastapi-deployment](https://github.com/siail/vercel-fastapi-deployment)
 
 Until next time 👋.
